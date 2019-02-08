@@ -1,7 +1,13 @@
+//Paths
 const greet = require('../lib/greet');
 const math = require('../lib/arithmetic');
 const faker = require ('faker');
+//Global Variables
+const array = [faker.random.number(), faker.random.number(), faker.random.number()];
+let firstArgument = faker.random.number();
+let secondArgument = faker.random.number();
 
+//Tests
 describe ('Testing greeting function.', () => {
   test('returns string.', () => {
     expect(greet.sayHi('world')).toEqual('Hello world.');
@@ -12,34 +18,31 @@ describe ('Testing greeting function.', () => {
   });
 }); 
 
-const firstArgument = faker.random.number();
-const secondArgument = faker.random.number();
-
 describe ('Testing add functions.', () => {
   test('returns total', () => {
-    expect(math.add(firstArgument, secondArgument)).toEqual(firstArgument + secondArgument);
+    expect(math.add(array)).toEqual(array[0] + array[1] + array[2]);
   });
 
   test('returns null', () => {
-    expect(math.add(`${firstArgument}`, `${secondArgument}`)).toBeNull();
+    expect(math.add(['cat', '1'])).toBeNull();
   });
 });
 
 describe ('Testing sub functions.', () => {
   test('returns total', () => {
-    expect(math.sub(firstArgument, secondArgument)).toEqual(firstArgument - secondArgument);
+    expect(math.sub(array)).toEqual(array[0] - array[1] - array[2]);
   });
   test('returns null', () => {
-    expect(math.add(`${firstArgument}`, `${secondArgument}`)).toBeNull();
+    expect(math.sub(['cat', '1'])).toBeNull();
   });
 });
 
 describe ('Testing mult functions.', () => {
   test('returns total', () => {
-    expect(math.mult(firstArgument, secondArgument)).toEqual(firstArgument * secondArgument);
+    expect(math.mult(array)).toEqual(array[0] * array[1] * array[2]);
   });
   test('returns null', () => {
-    expect(math.sub(`${firstArgument}`, `${secondArgument}`)).toBeNull();
+    expect(math.mult(['cat', '1'])).toBeNull();
   });
 });
 
