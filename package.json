@@ -1,17 +1,20 @@
 {
   "name": "node_ecosystem",
   "version": "1.0.0",
-  "description": "lab_1",
+  "description": "Lab 1",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "jest --verbose --coverage",
-    "test-watch": "jest --watchAll --verbose --coverage"
+    "test-watch": "jest --watchall --verbose --coverage"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erikmjohnson/node_ecosystem.git"
   },
-  "author": "erik m johnson",
+  "author": "Erik M Johnson",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/erikmjohnson/node_ecosystem/issues"
@@ -21,6 +24,5 @@
     "arithmetic": "^1.0.1",
     "faker": "^4.1.0",
     "jest": "^24.1.0"
-  },
-  "devDependencies": {}
+  }
 }
