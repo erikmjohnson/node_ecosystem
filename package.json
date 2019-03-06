@@ -4,7 +4,7 @@
   "description": "lab_1",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/erikmjohnson/node_ecosystem#readme",
   "dependencies": {
-    "arithmetic": "^1.0.1",
-    "eslint": "^5.13.0"
+    "arithmetic": "^1.0.1"
   },
   "devDependencies": {
     "faker": "^4.1.0",
