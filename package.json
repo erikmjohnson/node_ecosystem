@@ -17,10 +17,9 @@
   },
   "homepage": "https://github.com/erikmjohnson/node_ecosystem#readme",
   "dependencies": {
-    "arithmetic": "^1.0.1"
-  },
-  "devDependencies": {
+    "arithmetic": "^1.0.1",
     "faker": "^4.1.0",
     "jest": "^24.1.0"
-  }
+  },
+  "devDependencies": {}
 }
